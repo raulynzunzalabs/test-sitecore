@@ -14,3 +14,12 @@ class SitecoreNextApp extends HTMLElement {
 }
 
 customElements.define('sitecore-next-app', SitecoreNextApp);
+
+(function () {
+  const container = document.querySelector('.feaas-component, .-grid--custom, [data-instance-id="tyoijjnA73"]');
+  if (container) {
+    const app = document.createElement('sitecore-next-app');
+    app.setAttribute('src', 'https://test-sitecore.vercel.app/');
+    container.appendChild(app);
+  }
+})();
